@@ -1,7 +1,75 @@
 /** CSS STYLE **/
 
-.hello {
-  display: block;
+/* ================================================================== *\
+   Google Fonts
+\* ================================================================== */
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
 
-  color: #fff;
+  src:
+    local("Open Sans"),
+    url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"),
+    url("../../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Neucha, cursive;
+  font-style: normal;
+
+  src:
+    local("Neucha"),
+    url("https://fonts.googleapis.com/css2?family=Neucha&display=swap"),
+    url("../../assets/fonts/Neucha-Regular.ttf");
+}
+
+:root {
+  /* ================================================================== *\
+  /*  Colors
+  \* ================================================================== */
+  --white-color: #fff;
+  --translucent-white-color: #d7ccc0;
+  --light-color: #f5f4f0;
+  --main-color: #fe8a02;
+  --main-dark-color: #42413c;
+  --dark-color: #2a2626;
+  --translucent-dark-color: #908d8b;
+  --brown-color: #b09a81;
+  --blue-color: #1085c5;
+
+  /* ================================================================== *\
+  	  Base font
+  \* ================================================================== */
+  color: var(--dark-color);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Neucha, cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+  margin: 100px 0;
+
+  text-align: center;
 }
