@@ -11,24 +11,17 @@
 
   display: flex;
   justify-content: center;
-}
 
-.header-wrapper {
-  max-width: 1110px;
-
-  padding: 100px 0;
+  background-color: var(--light-color);
 }
 
 /* Background image */
 .header::before {
   position: absolute;
   top: 0;
-  z-index: -1;
 
   width: 100%;
   height: 100%;
-
-  background-color: var(--light-color);
 
   background-image: url("../assets/images/background.png");
   background-repeat: no-repeat;
@@ -43,17 +36,20 @@
   position: absolute;
   top: 55px;
   right: -270px;
-  z-index: -1;
 
   height: 525px;
+}
+
+.header-wrapper {
+  max-width: 1110px;
+
+  padding: 100px 0;
 }
 
 .two-cols {
   display: flex;
   gap: 30px;
   justify-content: space-between;
-
-  margin-bottom: 12px;
 }
 
 .left-col {
@@ -171,4 +167,95 @@
 
 .navigation-card__text {
   margin: 16px 0 0;
+}
+
+/* ================================================================== *\
+	 Ikea Section
+\* ================================================================== */
+
+/* Background image */
+.section-ikea-effect::before {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: "";
+}
+
+.section-ikea-effect {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  background-color: var(--light-color);
+}
+
+.ikea-wrapper {
+  width: 1110px;
+
+  padding: 100px 0;
+}
+
+.ikea-img {
+  position: relative;
+  z-index: 100;
+
+  vertical-align: middle;
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+}
+
+.ikea-subheading {
+  color: var(--translucent-dark-color);
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Neucha, cursive;
+  font-style: normal;
+}
+
+.ikea-heading {
+  margin-bottom: 30px;
+
+  color: var(--dark-color);
+  font-size: 60px;
+}
+
+.ikea-desc {
+  font-weight: 400;
+  font-size: 34px;
+  font-family: Neucha, cursive;
+  font-style: normal;
+  line-height: 41px;
+}
+
+.ikea-second-heading {
+  margin: 100px 0 20px;
+  padding: 5px 10px;
+
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  line-height: 17px;
+
+  text-transform: uppercase;
+
+  background-color: var(--brown-color);
+}
+
+.ikea-text {
+  line-height: 26px;
 }
