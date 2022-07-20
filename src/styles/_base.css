@@ -1,0 +1,84 @@
+:root {
+  /* ================================================================== *\
+  /*  Colors
+  \* ================================================================== */
+  --white-color: #fff;
+  --translucent-white-color: #d7ccc0;
+  --light-color: #f5f4f0;
+  --main-color: #fe8a02;
+  --main-dark-color: #42413c;
+  --dark-color: #2a2626;
+  --translucent-dark-color: #908d8b;
+  --brown-color: #b09a81;
+  --blue-color: #1085c5;
+
+  /* ================================================================== *\
+  	  Base font
+  \* ================================================================== */
+  color: var(--dark-color);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ================================================================== *\
+	 Heading Settings
+\* ================================================================== */
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  font-weight: 400;
+
+  font-family: Neucha, cursive;
+  font-style: normal;
+
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.heading {
+  width: 100%;
+  padding-bottom: 185px;
+
+  font-weight: 400;
+}
+
+.heading--white {
+  color: var(--white-color);
+}
+
+.heading--highlighted {
+  color: var(--main-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  width: 1110px;
+  /*margin: 100px 0;*/
+}
