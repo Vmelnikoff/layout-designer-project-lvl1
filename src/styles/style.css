@@ -1,0 +1,76 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  src:
+    local("Open Sans"),
+    url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Neucha;
+  src:
+    local("Neucha"),
+    url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+}
+
+:root {
+  /* Colours */
+  --white-color: #fff;
+  --light-color: #f5f4f0;
+  --main-color: #fe8a02;
+  --main-dark-color: #42413c;
+  --dark-color: #2a2626;
+  --translucent-dark-color: #908d8b;
+  --brown-color: #b09a81;
+  --blue-color: #1085c5;
+
+  /* Typography */
+  color: var(--dark-color);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+}
+
+/* ================================================================== *\
+	 Main
+\* ================================================================== */
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Neucha, cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 68px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.hello {
+  display: block;
+
+  color: #fff;
+}
